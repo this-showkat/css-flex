@@ -1,0 +1,1925 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Flex</title>
+		<link rel="stylesheet" type="text/css" href="flex.css" />
+	</head>
+	<body>
+		<section class="index-section" id="index-section">
+			<h1>CSS Flex </h1>
+			<h2>List of Flex properties for <mark>container</mark></h2>
+			<table class="flex-index-table" id="flex-index-table-container">
+				<thead>
+					<td>#</td>
+					<td>Property name</td>
+					<td>Applicable value</td>
+					<td>Default value</td>
+					<td>Example</td>
+					<td>Reference</td>
+				</thead>
+				<tbody>
+					<tr>
+						<td rowspan="2">1</td>
+						<td rowspan="2">display</td>
+						<td>flex</td>
+						<td rowspan="2">-</td>
+						<td><a href="#display-flex">display: flex</a></td>
+						<td rowspan="2"><a href="https://www.w3.org/TR/css-flexbox-1/#flex-containers" target="_blank">w3.org</a></td>
+					</tr>
+					<tr>
+						<td>inline-flex</td>
+						<td><a href="#display-inline-flex">display: inline-flex</a></td>
+					</tr>
+
+					<tr>
+						<td rowspan="4">2</td>
+						<td rowspan="4">flex-direction</td>
+						<td>row</td>
+						<td rowspan="4">row</td>
+						<td><a href="#flex-direction-row">flex-direction: row</a></td>
+						<td rowspan="4"><a href="">w3.org</a></td>
+					</tr>
+					<tr>
+						<td>row-reverse</td>
+						<td><a href="#flex-direction-row-reverse">flex-direction: row-reverse</a></td>
+					</tr>
+					<tr>
+						<td>column</td>
+						<td><a href="#flex-direction-column">flex-direction: column</a></td>
+					</tr>
+					<tr>
+						<td>column-reverse</td>
+						<td><a href="#flex-direction-column-reverse">flex-direction: column-reverse</a></td>
+					</tr>
+
+					<tr>
+						<td rowspan="3">3</td>
+						<td rowspan="3">flex-wrap</td>
+						<td>nowrap</td>
+						<td rowspan="3">nowrap</td>
+						<td><a href="#flex-wrap-nowrap">flex-wrap: nowrap</a></td>
+						<td rowspan="3"><a href="http://www.w3.org/TR/css-flexbox-1/#flex-wrap-property" target="_blank">w3.org</a></td>
+					</tr>
+					<tr>
+						<td>wrap</td>
+						
+						<td><a href="#flex-wrap-wrap">flex-wrap: wrap</a></td>
+					</tr>
+					<tr>
+						<td>wrap-reverse</td>
+						<td><a href="#flex-wrap-wrap-reverse">flex-wrap: wrap-reverse</a></td>
+					</tr>
+
+
+					<tr>
+						<td rowspan="6">4</td>
+						<td rowspan="6">justify-content</td>
+						<td>flex-start</td>
+						<td rowspan="6">flex-start</td>
+						<td><a href="#justify-content-flex-start">justify-conent: flex-start</a></td>
+						<td rowspan="6"><a href="https://www.w3.org/TR/css-flexbox-1/#justify-content-property" target="_blank">w3.org</a></td>
+					</tr>
+					<tr>
+						<td>flex-end</td>
+						<td><a href="#justify-content-flex-end">justify-content: flex-end</a></td>
+					</tr>
+					<tr>
+						<td>center</td>
+						<td><a href="#justify-content-center">justify-content: center</a></td>
+					</tr>
+					<tr>
+						<td>space-between</td>
+						<td><a href="#justify-content-space-between">justify-content: space-between</a></td>
+					</tr>
+					<tr>
+						<td>space-around</td>
+						<td><a href="#justify-content-space-around">justify-content: space-around</a></td>
+					</tr>
+					<tr>
+						<td>space-evenly</td>
+						<td><a href="#justify-content-space-evenly">justify-content: space-evenly</a></td>
+					</tr>
+
+
+					<tr>
+						<td rowspan="5">5</td>
+						<td rowspan="5">align-items</td>
+						<td>flex-start</td>
+						<td rowspan="5">stretch</td>
+						<td><a href="#align-items-flex-start">align-items: flex-start</a></td>
+						<td rowspan="5"><a href="https://www.w3.org/TR/css-flexbox-1/#propdef-align-items" target="_blank">w3.org</a></td>
+					</tr>
+					<tr>
+						<td>flex-end</td>
+						<td><a href="#align-items-flex-end">align-items: flex-end</a></td>
+					</tr>
+					<tr>
+						<td>center</td>
+						<td><a href="#align-items-center">align-items: center</a></td>
+					</tr>
+					<tr>
+						<td>baseline</td>
+						<td><a href="#align-items-baseline">align-items: baseline</a></td>
+					</tr>
+					<tr>
+						<td>stretch</td>
+						<td><a href="#align-items-stretch">align-items: stretch</a></td>
+					</tr>
+
+
+					<tr>
+						<td rowspan="6">6</td>
+						<td rowspan="6">align-content</td>
+						<td>flex-start</td>
+						<td rowspan="6">stretch</td>
+						<td><a href="#align-content-flex-start">align-content: flex-start</a></td>
+						<td rowspan="6"><a href="https://www.w3.org/TR/css-flexbox-1/#propdef-align-content" target="_blank">w3.org</a></td>
+					</tr>
+					<tr>
+						<td>flex-end</td>
+						<td><a href="#align-content-flex-end">align-content: flex-end</a></td>
+					</tr>
+					<tr>
+						<td>center</td>
+						<td><a href="#align-content-center">align-content: center</a></td>
+					</tr>
+					<tr>
+						<td>space-between</td>
+						<td><a href="#align-content-space-between">align-content: space-between</a></td>
+					</tr>
+					<tr>
+						<td>space-around</td>
+						<td><a href="#align-content-space-around">align-content: space-around</a></td>
+					</tr>
+					<tr>
+						<td>stretch</td>
+						<td><a href="#align-content-stretch">align-content: stretch</a></td>
+					</tr>
+				</tbody>
+			</table>
+			<section class="table-notes">
+				<h3>Note(s):</h3>
+				<ul>
+					<li>To get benefits of flex, we must initialize flex with <span class="code">display: flex;</span> or <span class="code">display: inline-flex;</span> first. Then other attributes of flex (on container and/or item level) would be applicable.</li>
+					<li>Once <span class="code">display: flex;</span> or <span class="code">display: inline-flex;</span> is set, the default values for each property (for both of container and item) are applied by default.</li>
+					<li>In flex container, <span class="code">flex-flow</span> could be used as shorthand for <span class="code">flex-diretion</span> and <span class="code">flex-wrap</span>. Example: <span class="code">flex-flow: row wrap;</span></li>
+					<li>The <span class="code">flex-wrap: nowrap;</span> property prevents <span class="code">align-content: &lt;value&gt;</span> from having an effect.</li>
+				</ul>
+			</section>
+
+
+
+
+
+
+
+
+
+	<h2 id="flex-index-table-item">List of Flex properties for <mark>item</mark></h2>
+			<table class="flex-index-table">
+				<thead>
+					<td>#</td>
+					<td>Property name</td>
+					<td>Applicable value</td>
+					<td>Default value</td>
+					<td>Example</td>
+					<td>Reference</td>
+				</thead>
+				<tbody>
+					<tr>
+						<td>1</td>
+						<td>order</td>
+						<td>&lt;integer&gt;</td>
+						<td>0</td>
+						<td><a href="#order-number">order: &lt;number&ge;</a></td>
+						<td><a href="https://www.w3.org/TR/css-flexbox-1/#propdef-order" target="_blank">w3.org</a></td>
+					</tr>
+
+					<tr>
+						<td rowspan="6">2</td>
+						<td rowspan="6">align-self</td>
+						<td>auto</td>
+						<td rowspan="6">auto</td>
+						<td><a href="#align-self-auto">align-self: auto</a></td>
+						<td rowspan="6"><a href="https://www.w3.org/TR/css-flexbox-1/#propdef-align-self">w3.org</a></td>
+					</tr>
+					<tr>
+						<td>flex-start</td>
+						<td><a href="#align-self-flex-start">align-self-flex-start</a></td>
+					</tr>
+					<tr>
+						<td>flex-end</td>
+						<td><a href="#align-self-flex-end">align-self: flex-end</a></td>
+					</tr>
+					<tr>
+						<td>center</td>
+						<td><a href="#align-self-center">align-self: center</a></td>
+					</tr>
+					<tr>
+						<td>baseline</td>
+						<td><a href="#align-self-baseline">align-self: baseline</a></td>
+					</tr>
+					<tr>
+						<td>stretch</td>
+						<td><a href="#align-self-stretch">align-self: stretch</a></td>
+					</tr>
+
+					<tr>
+						<td>3</td>
+						<td>flex-grow</td>
+						<td>&lt;number&gt;</td>
+						<td>0</td>
+						<td><a href="#flex-grow-number">flex-grow: &lt;number&gt;</a></td>
+						<td><a href="https://www.w3.org/TR/css-flexbox-1/#propdef-flex-grow" target="_blank">w3.org</a></td>
+					</tr>
+
+
+					<tr>
+						<td>4</td>
+						<td>flex-shrink</td>
+						<td>&lt;number&gt;</td>
+						<td>1</td>
+						<td><a href="#flex-shrink-number">flex-shrink: &lt;number&gt;</a></td>
+						<td><a href="https://www.w3.org/TR/css-flexbox-1/#propdef-flex-shrink" target="_blank">w3.org</a></td>
+					</tr>
+
+					<tr>
+						<td rowspan="3">5</td>
+						<td rowspan="3">flex-basis</td>
+						<td>&lt;size&gt;</td>
+						<td rowspan="3">auto</td>
+						<td><a href="#flex-basis-size">flex-basis: &lt;size&gt;</a></td>
+						<td rowspan="3"><a href="https://www.w3.org/TR/css-flexbox-1/#flex-basis-property" target="_blank">w3.org</a></td>
+					</tr>
+					<tr>
+						<td>&lt;content&gt;</td>
+						<td>-</td>
+					</tr>
+					<tr>
+						<td>auto</td>
+						<td>-</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<section class="table-notes">
+				<h3>Note(s):</h3>
+				<ul>
+					<li>In flex item, <span class="code">flex</span> coule be used as shorthand for <span class="code">flex-grow</span>, <span class="code">flex-shrink</span> and <span class="code">flex-basis</span>. Example: <span class="code">flex: 0 1 auto;</span></li>
+					<li>Authors are encouraged to control flexibility using the <span class="code">flex</span> shorthand rather than with <span class="code">flex-grow</span>, or <span class="code">flex-shrink</span>, or <span class="code">flex-basis</span> directly, as the shorthand correctly resets any unspecified components to accommodate common uses.(~w3.org)</li>
+
+				</ul>
+			</section>
+		</section>
+
+
+
+
+		<hr />
+
+
+
+
+		<section class="example-section">
+			<h1><abbr title="Cascading Style Sheet">CSS</abbr> Flex Examples</h1>
+			<h2>Conceptual content model</h2>
+			<section class="example-image">
+				<img src="content-model.svg" alt="content model image for flex" />
+			</section>
+			<section class="examples">
+<!-- 
+	c1: display
+	c1.1 : display: flex;
+-->
+				<section class="each-example-section" id="display-flex">
+					<h2>[c1.1] Example of <span class="code">display: flex;</span></h2>
+					<h3>(Applied on container) | <a href="#flex-index-table-container" class="button">^ Top</a></h3>
+					<h3>Before:</h3>
+					<section class="before-flex-section">
+						Thrown in prison for a crime he has not committed.
+						<section class="container not-display-flex-container">
+							<section class="item">
+								A
+							</section>
+							<section class="item">
+								B
+							</section>
+							<section class="item">
+								C
+							</section>
+							<section class="item">
+								D
+							</section>
+						</section>
+					</section>
+					<h3>After:</h3>
+					<section class="after-flex-section">
+						Thrown in prison for a crime he has not committed.
+						<section class="container display-flex-container">
+							<section class="item">
+								A
+							</section>
+							<section class="item">
+								B
+							</section>
+							<section class="item">
+								C
+							</section>
+							<section class="item">
+								D
+							</section>
+						</section>
+					</section>
+				</section>
+
+
+<!-- 
+	c1.2 : display: inline-flex;
+-->
+				<section class="each-example-section" id="display-inline-flex">
+					<h2>[c1.2] Example of <span class="code">display: inline-flex;</span></h2>
+					<h3>(Applied on container) | <a href="#flex-index-table-container" class="button">^ Top</a></h3>
+					<h3>Before:</h3>
+					<section class="before-flex-section">
+						Thrown in prison for a crime he has not committed.
+						<section class="container not-display-inline-flex-container">
+							<section class="item">
+								A
+							</section>
+							<section class="item">
+								B
+							</section>
+							<section class="item">
+								C
+							</section>
+							<section class="item">
+								D
+							</section>
+						</section>
+					</section>
+					<h3>After:</h3>
+					<section class="after-flex-section">
+						Thrown in prison for a crime he has not committed.
+						<section class="container display-inline-flex-container">
+							<section class="item">
+								A
+							</section>
+							<section class="item">
+								B
+							</section>
+							<section class="item">
+								C
+							</section>
+							<section class="item">
+								D
+							</section>
+						</section>
+					</section>
+				</section>
+
+
+<!-- 
+	c2: flex-direction
+	c2.1 : flex-direction: row;
+-->
+				<section class="each-example-section" id="flex-direction-row">
+					<h2>[c2.1] Example of <span class="code">flex-direction: row;</span></h2>
+					<h3>(Applied on container) | <a href="#flex-index-table-container" class="button">^ Top</a></h3>
+					<h3>Before:</h3>
+					<section class="before-flex-section">
+ 						<section class="container">
+							<section class="item">
+								A
+							</section>
+							<section class="item">
+								B
+							</section>
+							<section class="item">
+								C
+							</section>
+							<section class="item">
+								D
+							</section>
+						</section>
+					</section>
+					<h3>After:</h3>
+					<section class="after-flex-section">
+ 						<section class="container flex-direction-row-container">
+							<section class="item">
+								A
+							</section>
+							<section class="item">
+								B
+							</section>
+							<section class="item">
+								C
+							</section>
+							<section class="item">
+								D
+							</section>
+						</section>
+					</section>
+				</section>
+
+
+
+<!-- 
+	c2.2 : flex-direction: row-reverse;
+-->
+				<section class="each-example-section" id="flex-direction-row-reverse">
+					<h2>[c2.2] Example of <span class="code">flex-direction: row-reverse;</span></h2>
+					<h3>(Applied on container) | <a href="#flex-index-table-container" class="button">^ Top</a></h3>
+					<h3>Before:</h3>
+					<section class="before-flex-section">
+ 						<section class="container">
+							<section class="item">
+								A
+							</section>
+							<section class="item">
+								B
+							</section>
+							<section class="item">
+								C
+							</section>
+							<section class="item">
+								D
+							</section>
+						</section>
+					</section>
+					<h3>After:</h3>
+					<section class="after-flex-section">
+ 						<section class="container flex-direction-row-reverse-container">
+							<section class="item">
+								A
+							</section>
+							<section class="item">
+								B
+							</section>
+							<section class="item">
+								C
+							</section>
+							<section class="item">
+								D
+							</section>
+						</section>
+					</section>
+				</section>
+
+<!-- 
+	c2.3 : flex-direction: column;
+-->
+				<section class="each-example-section" id="flex-direction-column">
+					<h2>[c1.3] Example of <span class="code">flex-direction: column;</span></h2>
+					<h3>(Applied on container) | <a href="#flex-index-table-container" class="button">^ Top</a></h3>
+					<h3>Before:</h3>
+					<section class="before-flex-section">
+ 						<section class="container">
+							<section class="item">
+								A
+							</section>
+							<section class="item">
+								B
+							</section>
+							<section class="item">
+								C
+							</section>
+							<section class="item">
+								D
+							</section>
+						</section>
+					</section>
+					<h3>After:</h3>
+					<section class="after-flex-section">
+ 						<section class="container flex-direction-column-container">
+							<section class="item">
+								A
+							</section>
+							<section class="item">
+								B
+							</section>
+							<section class="item">
+								C
+							</section>
+							<section class="item">
+								D
+							</section>
+						</section>
+					</section>
+				</section>
+
+
+
+<!-- 
+	c2.4 : flex-direction: column-reverse;
+-->
+				<section class="each-example-section" id="flex-direction-column-reverse">
+					<h2>[c2.4] Example of <span class="code">flex-direction: column-reverse;</span></h2>
+					<h3>(Applied on container) | <a href="#flex-index-table-container" class="button">^ Top</a></h3>
+					<h3>Before:</h3>
+					<section class="before-flex-section">
+ 						<section class="container">
+							<section class="item">
+								A
+							</section>
+							<section class="item">
+								B
+							</section>
+							<section class="item">
+								C
+							</section>
+							<section class="item">
+								D
+							</section>
+						</section>
+					</section>
+					<h3>After:</h3>
+					<section class="after-flex-section">
+ 						<section class="container flex-direction-column-reverse-container">
+							<section class="item">
+								A
+							</section>
+							<section class="item">
+								B
+							</section>
+							<section class="item">
+								C
+							</section>
+							<section class="item">
+								D
+							</section>
+						</section>
+					</section>
+				</section>
+
+<!-- 
+	c3: flex-wrap
+	c3.1 : flex-wrap: nowrap;
+-->
+				<section class="each-example-section" id="flex-wrap-nowrap">
+					<h2>[c3.1] Example of <span class="code">flex-wrap: nowrap;</span></h2>
+					<h3>(Applied on container) | <a href="#flex-index-table-container" class="button">^ Top</a></h3>
+					<p>Given that: container height is 300px, width is 250px, and each item width is 100px.</p>
+					<h3>Before:</h3>
+					<section class="before-flex-section">
+ 						<section class="container flex-wrap-container">
+							<section class="item">
+								A
+							</section>
+							<section class="item">
+								B
+							</section>
+							<section class="item">
+								C
+							</section>
+							<section class="item">
+								D
+							</section>
+						</section>
+					</section>
+					<h3>After:</h3>
+					<section class="after-flex-section">
+ 						<section class="container flex-wrap-container flex-wrap-nowrap-container">
+							<section class="item">
+								A
+							</section>
+							<section class="item">
+								B
+							</section>
+							<section class="item">
+								C
+							</section>
+							<section class="item">
+								D
+							</section>
+						</section>
+					</section>
+				</section>
+
+
+
+
+<!-- 
+	c3.2 : flex-wrap: wrap;
+-->
+				<section class="each-example-section" id="flex-wrap-wrap">
+					<h2>[c3.2] Example of <span class="code">flex-wrap: wrap;</span></h2>
+					<h3>(Applied on container) | <a href="#flex-index-table-container" class="button">^ Top</a></h3>
+					<p>Given that: container height is 300px, width is 250px, and each item width is 100px.</p>
+					<h3>Before:</h3>
+					<section class="before-flex-section">
+ 						<section class="container flex-wrap-container">
+							<section class="item">
+								A
+							</section>
+							<section class="item">
+								B
+							</section>
+							<section class="item">
+								C
+							</section>
+							<section class="item">
+								D
+							</section>
+						</section>
+					</section>
+					<h3>After:</h3>
+					<section class="after-flex-section">
+ 						<section class="container flex-wrap-container flex-wrap-wrap-container">
+							<section class="item">
+								A
+							</section>
+							<section class="item">
+								B
+							</section>
+							<section class="item">
+								C
+							</section>
+							<section class="item">
+								D
+							</section>
+						</section>
+					</section>
+				</section>
+
+
+<!-- 
+	c3.3 : flex-wrap: wrap-reverse;
+-->
+				<section class="each-example-section" id="flex-wrap-wrap-reverse">
+					<h2>[c3.3] Example of <span class="code">flex-wrap: wrap-reverse;</span></h2>
+					<h3>(Applied on container) | <a href="#flex-index-table-container" class="button">^ Top</a></h3>
+					<p>Given that: container height is 300px, width is 250px, and each item width is 100px.</p>
+					<h3>Before:</h3>
+					<section class="before-flex-section">
+ 						<section class="container flex-wrap-container">
+							<section class="item">
+								A
+							</section>
+							<section class="item">
+								B
+							</section>
+							<section class="item">
+								C
+							</section>
+							<section class="item">
+								D
+							</section>
+						</section>
+					</section>
+					<h3>After:</h3>
+					<section class="after-flex-section">
+ 						<section class="container flex-wrap-container flex-wrap-wrap-reverse-container">
+							<section class="item">
+								A
+							</section>
+							<section class="item">
+								B
+							</section>
+							<section class="item">
+								C
+							</section>
+							<section class="item">
+								D
+							</section>
+						</section>
+					</section>
+				</section>
+
+
+
+<!-- 
+	c4: justify-content
+	c4.1 : justify-content: flex-start;
+-->
+				<section class="each-example-section" id="justify-content-flex-start">
+					<h2>[c4.1] Example of <span class="code">justify-content: flex-start;</span></h2>
+					<h3>(Applied on container) | <a href="#flex-index-table-container" class="button">^ Top</a></h3>
+					<h3>Before:</h3>
+					<section class="before-flex-section">
+ 						<section class="container">
+							<section class="item">
+								A
+							</section>
+							<section class="item">
+								B
+							</section>
+							<section class="item">
+								C
+							</section>
+							<section class="item">
+								D
+							</section>
+						</section>
+					</section>
+					<h3>After:</h3>
+					<section class="after-flex-section">
+ 						<section class="container justify-content-flex-start-container">
+							<section class="item">
+								A
+							</section>
+							<section class="item">
+								B
+							</section>
+							<section class="item">
+								C
+							</section>
+							<section class="item">
+								D
+							</section>
+						</section>
+					</section>
+				</section>
+<!-- 
+	c4.2 : justify-content: flex-end;
+-->
+				<section class="each-example-section" id="justify-content-flex-end">
+					<h2>[c4.2] Example of <span class="code">justify-content: flex-end;</span></h2>
+					<h3>(Applied on container) | <a href="#flex-index-table-container" class="button">^ Top</a></h3>
+					<h3>Before:</h3>
+					<section class="before-flex-section">
+ 						<section class="container">
+							<section class="item">
+								A
+							</section>
+							<section class="item">
+								B
+							</section>
+							<section class="item">
+								C
+							</section>
+							<section class="item">
+								D
+							</section>
+						</section>
+					</section>
+					<h3>After:</h3>
+					<section class="after-flex-section">
+ 						<section class="container justify-content-flex-end-container">
+							<section class="item">
+								A
+							</section>
+							<section class="item">
+								B
+							</section>
+							<section class="item">
+								C
+							</section>
+							<section class="item">
+								D
+							</section>
+						</section>
+					</section>
+				</section>
+<!-- 
+	c4: justify-content
+	c4.3 : justify-content: flex-center;
+-->
+				<section class="each-example-section" id="justify-content-center">
+					<h2>[c4.3] Example of <span class="code">justify-content: center;</span></h2>
+					<h3>(Applied on container) | <a href="#flex-index-table-container" class="button">^ Top</a></h3>
+					<h3>Before:</h3>
+					<section class="before-flex-section">
+ 						<section class="container">
+							<section class="item">
+								A
+							</section>
+							<section class="item">
+								B
+							</section>
+							<section class="item">
+								C
+							</section>
+							<section class="item">
+								D
+							</section>
+						</section>
+					</section>
+					<h3>After:</h3>
+					<section class="after-flex-section">
+ 						<section class="container justify-content-center-container">
+							<section class="item">
+								A
+							</section>
+							<section class="item">
+								B
+							</section>
+							<section class="item">
+								C
+							</section>
+							<section class="item">
+								D
+							</section>
+						</section>
+					</section>
+				</section>
+
+<!-- 
+	c4.4 : justify-content: space-between;
+-->
+				<section class="each-example-section" id="justify-content-space-between">
+					<h2>[c4.4] Example of <span class="code">justify-content: space-between;</span></h2>
+					<h3>(Applied on container) | <a href="#flex-index-table-container" class="button">^ Top</a></h3>
+					<h3>Before:</h3>
+					<section class="before-flex-section">
+ 						<section class="container">
+							<section class="item">
+								A
+							</section>
+							<section class="item">
+								B
+							</section>
+							<section class="item">
+								C
+							</section>
+							<section class="item">
+								D
+							</section>
+						</section>
+					</section>
+					<h3>After:</h3>
+					<section class="after-flex-section">
+ 						<section class="container justify-content-space-between-container">
+							<section class="item">
+								A
+							</section>
+							<section class="item">
+								B
+							</section>
+							<section class="item">
+								C
+							</section>
+							<section class="item">
+								D
+							</section>
+						</section>
+					</section>
+				</section>
+
+
+
+
+
+
+
+<!-- 
+	c4.5 : justify-content: space-around;
+-->
+				<section class="each-example-section" id="justify-content-space-around">
+					<h2>[c4.5] Example of <span class="code">justify-content: space-around;</span></h2>
+					<h3>(Applied on container) | <a href="#flex-index-table-container" class="button">^ Top</a></h3>
+					<h3>Before:</h3>
+					<section class="before-flex-section">
+ 						<section class="container">
+							<section class="item">
+								A
+							</section>
+							<section class="item">
+								B
+							</section>
+							<section class="item">
+								C
+							</section>
+							<section class="item">
+								D
+							</section>
+						</section>
+					</section>
+					<h3>After:</h3>
+					<section class="after-flex-section">
+ 						<section class="container justify-content-space-around-container">
+							<section class="item">
+								A
+							</section>
+							<section class="item">
+								B
+							</section>
+							<section class="item">
+								C
+							</section>
+							<section class="item">
+								D
+							</section>
+						</section>
+					</section>
+				</section>
+
+
+
+
+
+
+
+<!-- 
+	c4.6 : justify-content: space-evenly;
+-->
+				<section class="each-example-section" id="justify-content-space-evenly">
+					<h2>[c4.6] Example of <span class="code">justify-content: space-evenly;</span></h2>
+					<h3>(Applied on container) | <a href="#flex-index-table-container" class="button">^ Top</a></h3>
+					<h3>Before:</h3>
+					<section class="before-flex-section">
+ 						<section class="container">
+							<section class="item">
+								A
+							</section>
+							<section class="item">
+								B
+							</section>
+							<section class="item">
+								C
+							</section>
+							<section class="item">
+								D
+							</section>
+						</section>
+					</section>
+					<h3>After:</h3>
+					<section class="after-flex-section">
+ 						<section class="container justify-content-space-evenly-container">
+							<section class="item">
+								A
+							</section>
+							<section class="item">
+								B
+							</section>
+							<section class="item">
+								C
+							</section>
+							<section class="item">
+								D
+							</section>
+						</section>
+					</section>
+				</section>
+
+
+
+
+
+<!-- 
+	c5: align-items
+	c5.1 : align-items: flex-start;
+-->
+				<section class="each-example-section" id="align-items-flex-start">
+					<h2>[c5.1] Example of <span class="code">align-items: flex-start;</span></h2>
+					<h3>(Applied on container) | <a href="#flex-index-table-container" class="button">^ Top</a></h3>
+					<p>Given that: container height is 300px and width is 250px.</p>
+					<h3>Before:</h3>
+					<section class="before-flex-section">
+ 						<section class="container align-items-container">
+							<section class="item">
+								A
+							</section>
+							<section class="item">
+								B
+							</section>
+							<section class="item">
+								C
+							</section>
+							<section class="item">
+								D
+							</section>
+						</section>
+					</section>
+					<h3>After:</h3>
+					<section class="after-flex-section">
+ 						<section class="container align-items-container align-items-flex-start-container">
+							<section class="item">
+								A
+							</section>
+							<section class="item">
+								B
+							</section>
+							<section class="item">
+								C
+							</section>
+							<section class="item">
+								D
+							</section>
+						</section>
+					</section>
+				</section>
+
+
+
+<!-- 
+	c5.2 : align-items: flex-end;
+-->
+				<section class="each-example-section" id="align-items-flex-end">
+					<h2>[c5.2] Example of <span class="code">align-items: flex-end;</span></h2>
+					<h3>(Applied on container) | <a href="#flex-index-table-container" class="button">^ Top</a></h3>
+					<p>Given that: container height is 300px and width is 250px.</p>
+					<h3>Before:</h3>
+					<section class="before-flex-section">
+ 						<section class="container align-items-container">
+							<section class="item">
+								A
+							</section>
+							<section class="item">
+								B
+							</section>
+							<section class="item">
+								C
+							</section>
+							<section class="item">
+								D
+							</section>
+						</section>
+					</section>
+					<h3>After:</h3>
+					<section class="after-flex-section">
+ 						<section class="container align-items-container align-items-flex-end-container">
+							<section class="item">
+								A
+							</section>
+							<section class="item">
+								B
+							</section>
+							<section class="item">
+								C
+							</section>
+							<section class="item">
+								D
+							</section>
+						</section>
+					</section>
+				</section>
+
+<!-- 
+	c5.3 : align-items: center;
+-->
+				<section class="each-example-section" id="align-items-center">
+					<h2>[c5.3] Example of <span class="code">align-items: center;</span></h2>
+					<h3>(Applied on container) | <a href="#flex-index-table-container" class="button">^ Top</a></h3>
+					<p>Given that: container height is 300px and width is 250px.</p>
+					<h3>Before:</h3>
+					<section class="before-flex-section">
+ 						<section class="container align-items-container">
+							<section class="item">
+								A
+							</section>
+							<section class="item">
+								B
+							</section>
+							<section class="item">
+								C
+							</section>
+							<section class="item">
+								D
+							</section>
+						</section>
+					</section>
+					<h3>After:</h3>
+					<section class="after-flex-section">
+ 						<section class="container align-items-container align-items-center-container">
+							<section class="item">
+								A
+							</section>
+							<section class="item">
+								B
+							</section>
+							<section class="item">
+								C
+							</section>
+							<section class="item">
+								D
+							</section>
+						</section>
+					</section>
+				</section>
+<!-- 
+	c5.4 : align-items: baseline;
+-->
+				<section class="each-example-section" id="align-items-baseline">
+					<h2>[c5.4] Example of <span class="code">align-items: baseline;</span></h2>
+					<h3>(Applied on container) | <a href="#flex-index-table-container" class="button">^ Top</a></h3>
+					<p>Given that: container height is 300px and width is 250px.</p>
+					<h3>Before:</h3>
+					<section class="before-flex-section">
+ 						<section class="container align-items-container">
+							<section class="item">
+								A
+							</section>
+							<section class="item">
+								B
+							</section>
+							<section class="item">
+								C
+							</section>
+							<section class="item">
+								D
+							</section>
+						</section>
+					</section>
+					<h3>After:</h3>
+					<section class="after-flex-section">
+ 						<section class="container align-items-container align-items-baseline-container">
+							<section class="item">
+								A
+							</section>
+							<section class="item">
+								B
+							</section>
+							<section class="item">
+								C
+							</section>
+							<section class="item">
+								D
+							</section>
+						</section>
+					</section>
+				</section>
+<!-- 
+	c5.5 : align-items: stretch;
+-->
+				<section class="each-example-section" id="align-items-stretch">
+					<h2>[c5.5] Example of <span class="code">align-items: stretch;</span></h2>
+					<p>Given that: container height is 300px and width is 250px.</p>
+					<h3>(Applied on container) | <a href="#flex-index-table-container" class="button">^ Top</a></h3>
+					<p>Given that: container height is 300px, width is 250px, and each item width is 100px.</p>
+					<h3>Before:</h3>
+					<section class="before-flex-section">
+ 						<section class="container align-items-container">
+							<section class="item">
+								A
+							</section>
+							<section class="item">
+								B
+							</section>
+							<section class="item">
+								C
+							</section>
+							<section class="item">
+								D
+							</section>
+						</section>
+					</section>
+					<h3>After:</h3>
+					<section class="after-flex-section">
+ 						<section class="container align-items-container align-items-stretch-container">
+							<section class="item">
+								A
+							</section>
+							<section class="item">
+								B
+							</section>
+							<section class="item">
+								C
+							</section>
+							<section class="item">
+								D
+							</section>
+						</section>
+					</section>
+				</section>
+
+
+
+<!-- 
+	c6: align-content
+	c6.1 : align-content: flex-start;
+-->
+				<section class="each-example-section" id="align-content-flex-start">
+					<h2>[c6.1] Example of <span class="code">align-content: flex-start;</span></h2>
+					<h3>(Applied on container) | <a href="#flex-index-table-container" class="button">^ Top</a></h3>
+					<p>Given that: container height is 300px, width is 250px, and each item width is 100px.</p>
+					<h3>Before:</h3>
+					<section class="before-flex-section">
+ 						<section class="container align-content-container">
+							<section class="item">
+								A
+							</section>
+							<section class="item">
+								B
+							</section>
+							<section class="item">
+								C
+							</section>
+							<section class="item">
+								D
+							</section>
+						</section>
+					</section>
+					<h3>After:</h3>
+					<section class="after-flex-section">
+ 						<section class="container align-content-container align-content-flex-start-container">
+							<section class="item">
+								A
+							</section>
+							<section class="item">
+								B
+							</section>
+							<section class="item">
+								C
+							</section>
+							<section class="item">
+								D
+							</section>
+						</section>
+					</section>
+				</section>
+
+
+
+<!-- 
+	c6.2 : align-content: flex-end;
+-->
+				<section class="each-example-section" id="align-content-flex-end">
+					<h2>[c6.2] Example of <span class="code">align-content: flex-end;</span></h2>
+					<h3>(Applied on container) | <a href="#flex-index-table-container" class="button">^ Top</a></h3>
+					<p>Given that: container height is 300px, width is 250px, and each item width is 100px.</p>
+					<h3>Before:</h3>
+					<section class="before-flex-section">
+ 						<section class="container align-content-container">
+							<section class="item">
+								A
+							</section>
+							<section class="item">
+								B
+							</section>
+							<section class="item">
+								C
+							</section>
+							<section class="item">
+								D
+							</section>
+						</section>
+					</section>
+					<h3>After:</h3>
+					<section class="after-flex-section">
+ 						<section class="container align-content-container align-content-flex-end-container">
+							<section class="item">
+								A
+							</section>
+							<section class="item">
+								B
+							</section>
+							<section class="item">
+								C
+							</section>
+							<section class="item">
+								D
+							</section>
+						</section>
+					</section>
+				</section>
+
+<!-- 
+	c6.3 : align-content: center;
+-->
+				<section class="each-example-section" id="align-content-center">
+					<h2>[c6.3] Example of <span class="code">align-content: center;</span></h2>
+					<h3>(Applied on container) | <a href="#flex-index-table-container" class="button">^ Top</a></h3>
+					<p>Given that: container height is 300px, width is 250px, and each item width is 100px.</p>
+					<h3>Before:</h3>
+					<section class="before-flex-section">
+ 						<section class="container align-content-container">
+							<section class="item">
+								A
+							</section>
+							<section class="item">
+								B
+							</section>
+							<section class="item">
+								C
+							</section>
+							<section class="item">
+								D
+							</section>
+						</section>
+					</section>
+					<h3>After:</h3>
+					<section class="after-flex-section">
+ 						<section class="container align-content-container align-content-center-container">
+							<section class="item">
+								A
+							</section>
+							<section class="item">
+								B
+							</section>
+							<section class="item">
+								C
+							</section>
+							<section class="item">
+								D
+							</section>
+						</section>
+					</section>
+				</section>
+<!-- 
+	c6.4 : align-content: space-between;
+-->
+				<section class="each-example-section" id="align-content-space-between">
+					<h2>[c6.4] Example of <span class="code">align-content: space-between;</span></h2>
+					<h3>(Applied on container) | <a href="#flex-index-table-container" class="button">^ Top</a></h3>
+					<p>Given that: container height is 300px, width is 250px, and each item width is 100px.</p>					<h3>Before:</h3>
+					<section class="before-flex-section">
+ 						<section class="container align-content-container">
+							<section class="item">
+								A
+							</section>
+							<section class="item">
+								B
+							</section>
+							<section class="item">
+								C
+							</section>
+							<section class="item">
+								D
+							</section>
+						</section>
+					</section>
+					<h3>After:</h3>
+					<section class="after-flex-section">
+ 						<section class="container align-content-container align-content-space-between-container">
+							<section class="item">
+								A
+							</section>
+							<section class="item">
+								B
+							</section>
+							<section class="item">
+								C
+							</section>
+							<section class="item">
+								D
+							</section>
+						</section>
+					</section>
+				</section>
+<!-- 
+	c6.5 : align-content: space-around;
+-->
+				<section class="each-example-section" id="align-content-space-around">
+					<h2>[c6.5] Example of <span class="code">align-content: space-around;</span></h2>
+					<h3>(Applied on container) | <a href="#flex-index-table-container" class="button">^ Top</a></h3>
+					<p>Given that: container height is 300px, width is 250px, and each item width is 100px.</p>					<h3>Before:</h3>
+					<section class="before-flex-section">
+ 						<section class="container align-content-container">
+							<section class="item">
+								A
+							</section>
+							<section class="item">
+								B
+							</section>
+							<section class="item">
+								C
+							</section>
+							<section class="item">
+								D
+							</section>
+						</section>
+					</section>
+					<h3>After:</h3>
+					<section class="after-flex-section">
+ 						<section class="container align-content-container align-content-space-around-container">
+							<section class="item">
+								A
+							</section>
+							<section class="item">
+								B
+							</section>
+							<section class="item">
+								C
+							</section>
+							<section class="item">
+								D
+							</section>
+						</section>
+					</section>
+				</section>
+<!-- 
+	c6.6 : align-content: stretch;
+-->
+				<section class="each-example-section" id="align-content-stretch">
+					<h2>[c6.6] Example of <span class="code">align-content: stretch;</span></h2>
+					<h3>(Applied on container) | <a href="#flex-index-table-container" class="button">^ Top</a></h3>
+					<p>Given that: container height is 300px, width is 250px, and each item width is 100px.</p>
+					<h3>Before:</h3>
+					<section class="before-flex-section">
+ 						<section class="container align-content-container">
+							<section class="item">
+								A
+							</section>
+							<section class="item">
+								B
+							</section>
+							<section class="item">
+								C
+							</section>
+							<section class="item">
+								D
+							</section>
+						</section>
+					</section>
+					<h3>After:</h3>
+					<section class="after-flex-section">
+ 						<section class="container align-content-container align-content-stretch-container">
+							<section class="item">
+								A
+							</section>
+							<section class="item">
+								B
+							</section>
+							<section class="item">
+								C
+							</section>
+							<section class="item">
+								D
+							</section>
+						</section>
+					</section>
+				</section>
+
+
+
+
+
+
+
+
+
+
+<!-- 
+	i1 : order: <number>;
+-->
+				<section class="each-example-section" id="order-number">
+					<h2>[i1.1] Example of <span class="code">order: -1;</span></h2>
+					<h3>(Applied on item (3<sup>rd</sup> item here)) | <a href="#flex-index-table-item" class="button">^ Top</a></h3>
+
+					<h3>Before:</h3>
+					<section class="before-flex-section">
+ 						<section class="container">
+							<section class="item">
+								A
+							</section>
+							<section class="item">
+								B
+							</section>
+							<section class="item">
+								C
+							</section>
+							<section class="item">
+								D
+							</section>
+						</section>
+					</section>
+					<h3>After:</h3>
+					<section class="after-flex-section">
+ 						<section class="container order-number-container">
+							<section class="item">
+								A
+							</section>
+							<section class="item">
+								B
+							</section>
+							<section class="item order-number-item">
+								C
+							</section>
+							<section class="item">
+								D
+							</section>
+						</section>
+					</section>
+				</section>
+
+
+
+
+<!-- 
+	i2: align-self
+	i2.1 : align-self: auto;
+-->
+
+				<section class="each-example-section" id="align-self-auto">
+					<h2>[i2.1] Example of <span class="code">align-self: auto;</span></h2>
+					<h3>(Applied on item (3<sup>rd</sup> item here)) | <a href="#flex-index-table-item" class="button">^ Top</a></h3>
+
+					<h3>Before:</h3>
+					<section class="before-flex-section">
+ 						<section class="container align-self-container">
+							<section class="item">
+								A
+							</section>
+							<section class="item">
+								B
+							</section>
+							<section class="item">
+								C
+							</section>
+							<section class="item">
+								D
+							</section>
+						</section>
+					</section>
+					<h3>After:</h3>
+					<section class="after-flex-section">
+ 						<section class="container align-self-container align-self-auto-container">
+							<section class="item">
+								A
+							</section>
+							<section class="item">
+								B
+							</section>
+							<section class="item align-self-auto-item">
+								C
+							</section>
+							<section class="item">
+								D
+							</section>
+						</section>
+					</section>
+				</section>
+
+<!-- 
+	i2.2 : align-self: flex-start;
+-->
+
+				<section class="each-example-section" id="align-self-flex-start">
+					<h2>[i2.1] Example of <span class="code">align-self: flex-start;</span></h2>
+					<h3>(Applied on item (3<sup>rd</sup> item here)) | <a href="#flex-index-table-item" class="button">^ Top</a></h3>
+
+					<h3>Before:</h3>
+					<section class="before-flex-section">
+ 						<section class="container align-self-container">
+							<section class="item">
+								A
+							</section>
+							<section class="item">
+								B
+							</section>
+							<section class="item">
+								C
+							</section>
+							<section class="item">
+								D
+							</section>
+						</section>
+					</section>
+					<h3>After:</h3>
+					<section class="after-flex-section">
+ 						<section class="container align-self-container align-self-flex-start-container">
+							<section class="item">
+								A
+							</section>
+							<section class="item">
+								B
+							</section>
+							<section class="item align-self-flex-start-item">
+								C
+							</section>
+							<section class="item">
+								D
+							</section>
+						</section>
+					</section>
+				</section>
+
+<!-- 
+	i2.3 : align-self: flex-end;
+-->
+
+				<section class="each-example-section" id="align-self-flex-end">
+					<h2>[i2.1] Example of <span class="code">align-self: flex-end;</span></h2>
+					<h3>(Applied on item (3<sup>rd</sup> item here)) | <a href="#flex-index-table-item" class="button">^ Top</a></h3>
+
+					<h3>Before:</h3>
+					<section class="before-flex-section">
+ 						<section class="container align-self-container">
+							<section class="item">
+								A
+							</section>
+							<section class="item">
+								B
+							</section>
+							<section class="item">
+								C
+							</section>
+							<section class="item">
+								D
+							</section>
+						</section>
+					</section>
+					<h3>After:</h3>
+					<section class="after-flex-section">
+ 						<section class="container align-self-container align-self-flex-end-container">
+							<section class="item">
+								A
+							</section>
+							<section class="item">
+								B
+							</section>
+							<section class="item align-self-flex-end-item">
+								C
+							</section>
+							<section class="item">
+								D
+							</section>
+						</section>
+					</section>
+				</section>
+
+<!-- 
+	i2.4 : align-self: center;
+-->
+
+				<section class="each-example-section" id="align-self-center">
+					<h2>[i2.4] Example of <span class="code">align-self: center;</span></h2>
+					<h3>(Applied on item (3<sup>rd</sup> item here)) | <a href="#flex-index-table-item" class="button">^ Top</a></h3>
+
+					<h3>Before:</h3>
+					<section class="before-flex-section">
+ 						<section class="container align-self-container">
+							<section class="item">
+								A
+							</section>
+							<section class="item">
+								B
+							</section>
+							<section class="item">
+								C
+							</section>
+							<section class="item">
+								D
+							</section>
+						</section>
+					</section>
+					<h3>After:</h3>
+					<section class="after-flex-section">
+ 						<section class="container align-self-container align-self-center-container">
+							<section class="item">
+								A
+							</section>
+							<section class="item">
+								B
+							</section>
+							<section class="item align-self-center-item">
+								C
+							</section>
+							<section class="item">
+								D
+							</section>
+						</section>
+					</section>
+				</section>
+
+
+
+<!-- 
+	i2.5 : align-self: baseline;
+-->
+
+				<section class="each-example-section" id="align-self-baseline">
+					<h2>[i2.5] Example of <span class="code">align-self: baseline;</span></h2>
+					<h3>(Applied on item (3<sup>rd</sup> item here)) | <a href="#flex-index-table-item" class="button">^ Top</a></h3>
+
+					<h3>Before:</h3>
+					<section class="before-flex-section">
+ 						<section class="container align-self-container">
+							<section class="item">
+								A
+							</section>
+							<section class="item">
+								B
+							</section>
+							<section class="item">
+								C
+							</section>
+							<section class="item">
+								D
+							</section>
+						</section>
+					</section>
+					<h3>After:</h3>
+					<section class="after-flex-section">
+ 						<section class="container align-self-container align-self-baseline-container">
+							<section class="item">
+								A
+							</section>
+							<section class="item">
+								B
+							</section>
+							<section class="item align-self-baseline-item">
+								C
+							</section>
+							<section class="item">
+								D
+							</section>
+						</section>
+					</section>
+				</section>
+
+<!-- 
+	i2.6 : align-self: stretch;
+-->
+
+				<section class="each-example-section" id="align-self-stretch">
+					<h2>[i2.6] Example of <span class="code">align-self: stretch;</span></h2>
+					<h3>(Applied on item (3<sup>rd</sup> item here) | <a href="#flex-index-table-item" class="button">^ Top</a></h3>
+					<p>Given that the containers <span class="code">align-items: center;</span> to visualize effect)</p>
+					<h3>Before:</h3>
+					<section class="before-flex-section">
+ 						<section class="container align-self-container">
+							<section class="item">
+								A
+							</section>
+							<section class="item">
+								B
+							</section>
+							<section class="item">
+								C
+							</section>
+							<section class="item">
+								D
+							</section>
+						</section>
+					</section>
+					<h3>After:</h3>
+					<section class="after-flex-section">
+ 						<section class="container align-self-container align-self-stretch-container">
+							<section class="item">
+								A
+							</section>
+							<section class="item">
+								B
+							</section>
+							<section class="item align-self-stretch-item">
+								C
+							</section>
+							<section class="item">
+								D
+							</section>
+						</section>
+					</section>
+				</section>
+<!-- 
+	i3: flex-grow
+	i3.1 : flex-grow: <number>;
+-->
+
+				<section class="each-example-section" id="flex-grow-number">
+					<h2>[i3.1] Example of <span class="code">flex-grow: 0.8;</span></h2>
+					<h3>(Applied on item (3<sup>rd</sup> item here)) | <a href="#flex-index-table-item" class="button">^ Top</a></h3>
+					<h3>Before:</h3>
+					<section class="before-flex-section">
+ 						<section class="container flex-grow-container">
+							<section class="item">
+								A
+							</section>
+							<section class="item">
+								B
+							</section>
+							<section class="item">
+								C
+							</section>
+							<section class="item">
+								D
+							</section>
+						</section>
+					</section>
+					<h3>After:</h3>
+					<section class="after-flex-section">
+ 						<section class="container flex-grow-container flex-grow-number-container">
+							<section class="item">
+								A
+							</section>
+							<section class="item">
+								B
+							</section>
+							<section class="item flex-grow-number-item">
+								C
+							</section>
+							<section class="item">
+								D
+							</section>
+						</section>
+					</section>
+				</section>
+
+<!-- 
+	i4: flex-shrink
+	i4.1 : flex-shrink: <number>;
+-->
+
+				<section class="each-example-section" id="flex-shrink-number">
+					<h2>[i4.1] Example of <span class="code">flex-shrink: 0.3;</span></h2>
+					<h3>(Applied on item (4<sup>th</sup> item here)) | <a href="#flex-index-table-item" class="button">^ Top</a></h3>
+					<p>given that each item are given 50% of its container width. The item where shrink would be applied (4<sup>th</sup> item here), the item will ensure the size it was given (width 50% of the container here) when <span class="code">flex-shrink: 0;</span> and shrink to its default size when <span class="code">flex-shrink: 1;</span>. Intermediate values (i.e., 0.1) should work accordingly.</p>
+
+					<h3>Before:</h3>
+					<section class="before-flex-section">
+ 						<section class="container flex-shrink-container">
+							<section class="item">
+								A
+							</section>
+							<section class="item">
+								B
+							</section>
+							<section class="item">
+								C
+							</section>
+							<section class="item">
+								D
+							</section>
+						</section>
+					</section>
+					<h3>After:</h3>
+					<section class="after-flex-section">
+ 						<section class="container flex-shrink-container flex-shrink-number-container">
+							<section class="item">
+								A
+							</section>
+							<section class="item">
+								B
+							</section>
+							<section class="item">
+								C
+							</section>
+							<section class="item flex-shrink-number-item">
+								D
+							</section>
+						</section>
+					</section>
+				</section>
+
+<!-- 
+	i5: flex-basis
+	i5.1 : flex-basis: <size>;
+-->
+
+				<section class="each-example-section" id="flex-basis-size">
+					<h2>[i4.1] Example of <span class="code">flex-basis: &lt;size&gt;</span></h2>
+					<h3>(Applied on item (3<sup>rd</sup> item here)) | <a href="#flex-index-table-item" class="button">^ Top</a></h3>
+					<p>There are different scenario on same value of <span class="code">flex-basis: &lt;size&gt;</span>. When <span clas="code">flex-direction: row;</span>(which is set by default), <span class="code">flex-basis: &lt;size&gt;</span> will change width of the item, and when <span class="code">flex-direction: column</span>, <span class="code">flex-basis: &lt;size&gt;</span>will change height of the item.</p>
+
+					<h3>Before:</h3>
+					<section class="before-flex-section">
+ 						<section class="container flex-basis-container">
+							<section class="item">
+								A
+							</section>
+							<section class="item">
+								B
+							</section>
+							<section class="item">
+								C
+							</section>
+							<section class="item">
+								D
+							</section>
+						</section>
+					</section>
+					<h3>After (when <span class="code">flex-direction: row;</span>):</h3>
+					<section class="after-flex-section">
+ 						<section class="container flex-basis-container flex-basis-size-container">
+							<section class="item">
+								A
+							</section>
+							<section class="item">
+								B
+							</section>
+							<section class="item flex-basis-size-item">
+								C
+							</section>
+							<section class="item">
+								D
+							</section>
+						</section>
+					</section>
+					<h3>After (when <span class="code">flex-direction: column;</span>):</h3>
+					<section class="after-flex-section">
+ 						<section class="container flex-basis-size-direction-column-container">
+							<section class="item">
+								A
+							</section>
+							<section class="item">
+								B
+							</section>
+							<section class="item flex-basis-size-item">
+								C
+							</section>
+							<section class="item">
+								D
+							</section>
+						</section>
+					</section>
+				</section>
+				<hr />
+				<section class="reference-section">
+					<p>Support taken from the following sources during development of this content includes:</p>
+					<ul>
+						<li><a href="https://yoksel.github.io/flex-cheatsheet/" target="_blank">yoksel.github.io</a></li>
+						<li><a href="https://www.w3.org/TR/css-flexbox-1/" target="_blank">www.w3.org</a></li>
+						<li>and Internet searching.</li>
+					</ul>
+					<p>Last update: 24-Aug-2023</p>					
+				</section>
+				<section class="the-end-message-section">
+					<h2>Thank you.</h2>
+				</section>
+
+
+			</section>
+		</section>
+	</body>
+</html>
